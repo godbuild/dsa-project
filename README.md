@@ -1,4 +1,4 @@
-# Mentorship App Frontend
+# Mentorship App Backend
 
 ## Setup
 
@@ -6,21 +6,18 @@
    ```
    npm install
    ```
-2. Set API URL (if needed):
+2. Create `.env` with:
    ```
-   VITE_API_URL=http://localhost:5000/api
+   MONGO_URI=mongodb://localhost:27017/mentorship
+   JWT_SECRET='14004c438e04309b270a37c26092070f5807836faaf5130348233af9efe341b087a18c1a35f523ee20d06064b7fa10047eeb9c095df1a4e0d0c4cb262dc0bb79
+   PORT=5000
    ```
-3. Run in development:
+3. Build and start:
    ```
-   npm run dev
+   npm run build
+   npm start
    ```
-
-## Testing
-
-```
-npm run test
-```
 
 ## Deployment
 
-Deploy with Vercel, Netlify, or your preferred static host.
+Deploy with Render, Heroku, or any Node-compatible host.
